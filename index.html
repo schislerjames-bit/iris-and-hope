@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris & Hope Art</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        /* Header & Logo */
+        header {
+            text-align: center;
+            padding: 40px 20px 0px; 
+        }
+        .logo-img {
+            max-width: 450px; 
+            height: auto;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero / Introduction */
+        .hero {
+            text-align: center;
+            padding: 10px 0 0px; /* Removed bottom padding entirely */
+        }
+        .hero h2 {
+            margin-top: 0; 
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background-color: #f9fbfd;
+            padding: 30px 50px 50px; /* Reduced top padding */
+            border-radius: 12px;
+            text-align: center;
+            margin: 10px 0 50px; /* Reduced top margin to pull it up */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .pricing-section h2 {
+            margin-top: 10; /* Removes default browser spacing above the word Pricing */
+        }
+        .price-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .price-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            min-width: 200px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .price-item h3 {
+            margin-top: 0;
+            color: #34495e;
+            font-weight: 500;
+        }
+        .price-value {
+            font-size: 2em;
+            color: #d4af37; /* Gold accent */
+            margin: 10px 0;
+        }
+        
+        /* Physical Add-ons */
+        .add-ons {
+            margin-top: 50px;
+        }
+        .add-ons h3 {
+            color: #34495e;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .add-ons-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .add-on-item {
+            max-width: 300px;
+            width: 100%;
+        }
+        .add-on-item p {
+            font-size: 1.1em;
+            color: #34495e;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .add-on-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .charity-banner {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #eaf4f4;
+            border-left: 4px solid #52b788;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2d6a4f;
+        }
+
+        /* About Section */
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 50px;
+            padding: 60px 0;
+            flex-wrap: wrap;
+        }
+        .about-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 350px;
+        }
+        .about-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .about-text {
+            max-width: 550px;
+        }
+        .about-text p {
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Logo -->
+    <header>
+        <img src="logo.jpg" alt="Iris and Hope Logo" class="logo-img">
+    </header>
+
+    <div class="container">
+        
+        <!-- Hero Introduction -->
+        <section class="hero">
+            <h2>The Beauty of the Eye, Captured in Art.</h2>
+            <p>Discover the unique, microscopic landscapes hidden within your own eyes through high-resolution macro photography.</p>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section">
+            <h2>Pricing</h2>
+            
+            <div class="price-grid">
+                <div class="price-item">
+                    <h3>Digital Only</h3>
+                    <div class="price-value">$75</div>
+                    <p>Per image</p>
+                </div>
+                <div class="price-item">
+                    <h3>Group Digital</h3>
+                    <div class="price-value">$50</div>
+                    <p>Per image (3 or more)</p>
+                </div>
+            </div>
+
+            <!-- Physical Add-ons -->
+            <div class="add-ons">
+                <h3>Physical Add-ons</h3>
+                <div class="add-ons-container">
+                    <div class="add-on-item">
+                        <p>8x8 inch Print: +$10</p>
+                        <img src="print-8x8.jpg" alt="8x8 inch Print">
+                    </div>
+                    <div class="add-on-item">
+                        <p>Custom Framed: +$25</p>
+                        <img src="framed-art.jpg" alt="Custom Framed Iris Art">
+                    </div>
+                </div>
+            </div>
+
+            <div class="charity-banner">
+                Because we believe in the gift of sight, 10% of every purchase goes directly to organizations working to cure vision loss.
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-images">
+                <img src="jenny-portrait.jpg" alt="Jenny Schisler" class="about-img">
+                <img src="jenny-iris.png" alt="Jenny's Iris" class="about-img">
+            </div>
+            <div class="about-text">
+                <h2>Jenny's Story</h2>
+                <p>The human eye is extraordinary—delicate, complex, and uniquely beautiful. Every iris has its own colors, patterns, and details. No two are alike.</p>
+                <p>We often call the eyes the windows to the soul. Through them, we see the people we love, experience the world, and witness the beauty of creation.</p>
+                <p>Yet something we use every moment can easily be taken for granted.</p>
+                <p><strong>Sight is a gift.</strong></p>
+                <p>This is my iris (Jenny Schisler, co-founder of Iris & Hope). You can see brilliant brown and golden hues, but you cannot see the eye disease that is causing me to go blind. Retinitis pigmentosa, and chronic RP-associated macular edema led to my resignation from a visually demanding job I loved in May of 2026 and led me to start a home-based macro photography business to support our family and help fund a cure.</p>
+                <p>For those living with inherited retinal diseases, the gift of sight is threatened. These conditions gradually cause severe vision loss or blindness.</p>
+                <p>That is why finding treatments and cures matters. We want to give people the chance to keep seeing the faces they love, experiencing joy, learning, working, creating, and connecting with the world around them.</p>
+                <p>Sight is more than vision. It is connection, independence, experience, memory, and seeing the people and world God has created.</p>
+                <p>When we photograph an iris, we capture a glimpse of something wonderfully made—and a reminder of how precious sight truly is.</p>
+                <p>Until inherited retinal diseases can be cured, we can support those working toward that day. 10% of every purchase goes toward funding a cure.</p>
+                <p>Every eye is unique. Every person is valuable. Every moment of sight is worth saving.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer / Contact -->
+    <footer>
+        <h2>Ready to book your session?</h2>
+        <p>Contact us today to schedule your macro portrait.</p>
+        <p><a href="mailto:info@irisandhopeart.com">info@irisandhopeart.com</a></p>
+        <p style="margin-top: 30px; font-size: 0.8em; font-style: italic; color: #aaa;">*We use high-resolution macro photography along with AI editing tools to produce our unique iris images.</p>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #888;">&copy; 2026 Iris and Hope Art. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
