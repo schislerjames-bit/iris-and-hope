@@ -6,6 +6,9 @@
     <title>Iris & Hope Art</title>
     <style>
         /* Base Styles */
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
@@ -76,7 +79,7 @@
             border-radius: 8px;
             min-width: 200px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            flex: 1; /* Helps boxes size evenly */
+            flex: 1; 
         }
         .price-item h3 {
             margin-top: 0;
@@ -194,11 +197,11 @@
                 margin: 10px 0 30px;
             }
             .price-grid {
-                flex-direction: column; /* Stacks pricing boxes on top of each other */
+                flex-direction: column;
                 gap: 20px;
             }
             .price-item {
-                min-width: 100%; 
+                width: 100%; 
                 padding: 20px;
             }
             .add-ons-container {
@@ -263,8 +266,8 @@
                         <img src="print-8x8.jpg" alt="8x8 inch Print">
                     </div>
                     <div class="add-on-item">
-                        <p>Custom Framed: +$25</p>
-                        <img src="framed-art.jpg" alt="Custom Framed Iris Art">
+                        <p>Framed 8x8 Print: +$25</p>
+                        <img src="framed-art.jpg" alt="Framed 8x8 Print Iris Art">
                     </div>
                 </div>
             </div>
@@ -303,6 +306,7 @@
         <h2>Ready to book your session?</h2>
         <p>Contact us today to schedule your macro portrait.</p>
         <p><a href="mailto:info@irisandhopeart.com">info@irisandhopeart.com</a></p>
+        <p style="margin-top: 20px; font-size: 1.1em; font-weight: bold; color: #d4af37;">Services Available in the Northwest Arkansas Region.</p>
         <p style="margin-top: 30px; font-size: 0.8em; font-style: italic; color: #aaa;">*We use high-resolution macro photography along with AI editing tools to produce our unique iris images.</p>
         <p style="margin-top: 10px; font-size: 0.9em; color: #888;">&copy; 2026 Iris and Hope Art. All rights reserved.</p>
     </footer>
